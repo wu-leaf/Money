@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.veyron.www.money.MainActivity">
+    <!--FrameLayout-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.11" />
+    <!--底部的RadioGroup-->
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <RadioButton
+            android:id="@+id/rb_main_frame"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_main_frame_drawable_selector"
+            android:text="主页"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_news_frame"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_news_frame_drawable_selector"
+            android:text="新闻"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_search_frame"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_search_frame_drawable_selector"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_mine_frame"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/rb_mine_frame_drawable_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>
