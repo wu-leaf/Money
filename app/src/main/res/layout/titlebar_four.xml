@@ -3,17 +3,32 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:id="@+id/titlebar"
-    android:background="#3983ff"
+    android:background="#1d5da1"
     android:gravity="center"
     android:orientation="horizontal">
-
-
-    <TextView
-        android:id="@+id/tv_title"
+    <Button
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="20.0" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/setting2"/>
+    <Button
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="案例演示----4"
-        android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:src="@drawable/tips"/>
+    <Button
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
 
 </LinearLayout>
