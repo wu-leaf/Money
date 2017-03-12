@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:id="@+id/titlebar"
-    android:background="#3983ff"
+    android:background="#ffffff"
     android:gravity="center"
     android:orientation="horizontal">
 
@@ -12,8 +12,7 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="案例演示----2"
-        android:textColor="@android:color/white"
+        android:text="news"
         android:textSize="20sp" />
 
 </LinearLayout>

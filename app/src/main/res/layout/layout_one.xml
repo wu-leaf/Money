@@ -65,36 +65,37 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:padding="4dp"
+                    android:layout_gravity="center_vertical"
                     android:id="@+id/evaluation_ly"
                     android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/test"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="测评"/>
+                    android:text="小白买保险"/>
                     <TextView
                         android:id="@+id/toTest"
                         android:layout_below="@+id/test"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="来做个测评"/>
+                        android:text="测测你的需求"/>
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/rb_tab_news"
+                        android:src="@drawable/bx"
                         android:paddingRight="15dp"
+                        android:id="@+id/imageView"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentRight="true"
-                        android:layout_alignParentEnd="true"
-                        android:id="@+id/imageView"/>
+                        android:layout_alignParentEnd="true"/>
 
                 </RelativeLayout>
 
                 <View
                     android:layout_width="1dip"
                     android:layout_height="match_parent"
-                    android:background="#66CCFF"
+                    android:background="#efefef"
                     android:layout_gravity="center_vertical"
                     />
                 <!--专业顾问-->
@@ -102,71 +103,75 @@
                  android:layout_width="0dp"
                  android:layout_weight="1"
                  android:padding="4dp"
+                 android:layout_gravity="center_vertical"
                  android:layout_height="wrap_content">
                  <TextView
                      android:id="@+id/agent"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="测评"/>
+                     android:text="专业顾问"/>
                  <TextView
                      android:id="@+id/toAgen"
                      android:layout_below="@+id/agent"
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="来做个测评"/>
+                     android:text="公正制定个人方案"/>
+
                  <ImageView
-                     android:layout_alignParentRight="true"
                      android:layout_width="wrap_content"
                      android:paddingRight="15dp"
                      android:layout_height="wrap_content"
-                     android:src="@drawable/rb_tab_news"/>
+                     android:src="@drawable/prop"
+                     android:layout_alignParentTop="true"
+                     android:layout_alignParentRight="true"
+                     android:layout_alignParentEnd="true"
+                     android:id="@+id/imageView3"/>
 
              </RelativeLayout>
             </LinearLayout>
-<android.support.v7.widget.CardView
-    android:id="@+id/card_view1"
-    android:layout_width="match_parent"
-    android:layout_height="140dp"
-    android:layout_gravity="center"
-    android:layout_marginTop="5dp"
-    card_view:cardUseCompatPadding="true"
-    card_view:cardCornerRadius="4dp"
-    card_view:cardElevation="2dp">
-    <!--分析结果-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:background="#f5b234"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="分析结果+图标"/>
 
-    </RelativeLayout>
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                card_view:cardUseCompatPadding="true"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="2dp">
+                <!--分析结果-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:layout_height="match_parent">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/up2"/>
 
-</android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
 
 
-<android.support.v7.widget.CardView
+            <android.support.v7.widget.CardView
     android:id="@+id/card_view2"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:layout_gravity="center"
-    android:layout_marginTop="5dp"
+    android:layout_marginTop="3dp"
     card_view:cardUseCompatPadding="true"
     card_view:cardCornerRadius="4dp"
     card_view:cardElevation="2dp">
     <!--每日推荐-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#f5b2a9"
+        android:background="#ffffff"
         android:layout_height="match_parent">
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="每日推荐+图标"/>
+            android:src="@drawable/good"/>
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>
@@ -177,10 +182,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="3dp"
                 card_view:cardUseCompatPadding="true"
                 card_view:cardCornerRadius="4dp"
                 card_view:cardElevation="2dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:background="#ffce43"

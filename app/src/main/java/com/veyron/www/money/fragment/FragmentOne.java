@@ -34,13 +34,10 @@ public class FragmentOne extends BaseFragment {
     private LinearLayout ll_point_group;
     // 图片资源ID
     private final int[] imageIds = {
-            R.drawable.pro1,
-            R.drawable.pro2,
-            R.drawable.pro3,
-            R.drawable.pro4,
-            R.drawable.pro5,
-            R.drawable.pro6,
-            R.drawable.pro7};
+            R.drawable.pic1,
+            R.drawable.pic2,
+            R.drawable.pic3
+            };
     /**
      * 上一次高亮显示的位置
      */
@@ -52,13 +49,9 @@ public class FragmentOne extends BaseFragment {
 
     // 图片标题集合
     private final String[] imageDescriptions = {
-            "有毒鱼类",
-            "有毒软体动物",
-            "有毒腔肠动物",
-            "有毒爬行动物",
-            "有毒节肢动物",
-            "有毒棘皮动物",
-            "有毒海绵动物"
+            "法律",
+            "法律",
+            "法律"
     };
     private Handler handler = new Handler() {
         @Override

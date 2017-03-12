@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:id="@+id/titlebar"
-    android:background="#3bb"
+    android:background="#303f9f"
     android:gravity="center"
     android:orientation="horizontal">
 
@@ -12,8 +12,7 @@
         android:id="@+id/tb_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="主页标题"
-        android:textColor="@android:color/white"
+        android:text="APP名称"
         android:textSize="20sp" />
 
 </LinearLayout>
