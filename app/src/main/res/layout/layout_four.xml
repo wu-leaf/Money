@@ -39,13 +39,18 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
-        android:background="#ff3366"
+        android:background="#ffffff"
         android:layout_height="match_parent">
-      <TextView
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:textSize="30sp"
-          android:text="理赔"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:drawableTop="@drawable/lipei"
+            android:text=" 理 赔"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView2"/>
 
     </RelativeLayout>
     <!-- 客服  -->
@@ -53,13 +58,18 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_margin="3dp"
-        android:background="#ff810c"
+        android:background="#ffffff"
         android:layout_height="match_parent">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
-            android:text="客服"/>
+            android:drawableTop="@drawable/kefu"
+            android:text=" 客 服"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView3"/>
     </RelativeLayout>
 </LinearLayout>
 
@@ -69,6 +79,12 @@
                 android:layout_marginTop="10dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/save"/>
                 <TextView
                     android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
@@ -105,6 +121,12 @@
                 android:layout_height="50dp"
                 android:background="#ffffff"
                 android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/share"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

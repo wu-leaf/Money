@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.veyron.www.money.R;
+import com.veyron.www.money.activitys.AgentActivity;
 import com.veyron.www.money.activitys.DemandActivity;
 import com.veyron.www.money.utils.DensityUtil;
 
@@ -28,12 +29,16 @@ import java.util.ArrayList;
 
 public class FragmentOne extends BaseFragment {
     private RelativeLayout evaluation_ly;
+    private RelativeLayout agent_ly;
     private ArrayList<ImageView> imageViews;
     private ViewPager viewpager;
     private TextView tv_title;
     private LinearLayout ll_point_group;
     // 图片资源ID
     private final int[] imageIds = {
+            R.drawable.pic1,
+            R.drawable.pic2,
+            R.drawable.pic3,
             R.drawable.pic1,
             R.drawable.pic2,
             R.drawable.pic3
@@ -49,9 +54,12 @@ public class FragmentOne extends BaseFragment {
 
     // 图片标题集合
     private final String[] imageDescriptions = {
-            "法律",
-            "法律",
-            "法律"
+            "法律1",
+            "法律2",
+            "法律3",
+            "法律4",
+            "法律5",
+            "法律6"
     };
     private Handler handler = new Handler() {
         @Override
@@ -133,6 +141,15 @@ public class FragmentOne extends BaseFragment {
             public void onClick(View view) {
                 //调到DemandActivity
                 Intent intent = new Intent(getActivity(), DemandActivity.class);
+                startActivity(intent);
+            }
+        });
+        agent_ly = (RelativeLayout) contentView.findViewById(R.id.agent_ly);
+        agent_ly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //调到AgentActivity
+                Intent intent = new Intent(getActivity(), AgentActivity.class);
                 startActivity(intent);
             }
         });
@@ -236,8 +253,14 @@ public class FragmentOne extends BaseFragment {
             int realPosition = position % imageViews.size();
 
             final ImageView imageView = imageViews.get(realPosition);
+
+            //
+            ViewGroup parent = (ViewGroup) imageView.getParent();
+            if (parent != null) {
+                parent.removeAllViews();
+            }
             container.addView(imageView);//添加到ViewPager中
-            Log.e(TAG, "instantiateItem==" + realPosition + ",---imageView==" + imageView);
+            //Log.e(TAG, "instantiateItem==" + realPosition + ",---imageView==" + imageView);
 
 
             imageView.setTag(position);

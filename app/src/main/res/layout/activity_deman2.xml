@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.0" />
     <TextView
-    android:drawableRight="@drawable/rb_tab_search_press"
+    android:drawableRight="@drawable/wenhao_x32"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:textSize="16sp"

@@ -21,10 +21,15 @@
             android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing"/>
-        <activity android:name=".activitys.DemandActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".activitys.DemandActivity"
+            android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".activitys.DemanActivity2"
+        <activity
+            android:name=".activitys.DemanActivity2"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activitys.AgentActivity"
                   android:screenOrientation="portrait">
         </activity>
     </application>
