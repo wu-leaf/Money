@@ -89,11 +89,11 @@
                     />
                 <TextView
                     android:layout_margin="20dp"
-                    android:layout_width="136dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="八个小技巧"
-                    android:drawableLeft="@drawable/test111"
-                    />
+                    android:text="2016年法定结婚年龄"
+                    android:drawableLeft="@drawable/jiehui"
+                    android:layout_weight="0.43"/>
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dip"
@@ -102,10 +102,10 @@
                         />
                     <TextView
                         android:layout_margin="20dp"
-                        android:layout_width="136dp"
+                        android:layout_width="229dp"
                         android:layout_height="wrap_content"
-                        android:text="八个小技巧"
-                        android:drawableLeft="@drawable/test111"
+                        android:text="公司注销了债务怎么办"
+                        android:drawableLeft="@drawable/zaiwu"
                         />
                 </LinearLayout>
 

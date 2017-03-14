@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_gravity="center"
+            android:tag="@string/laingdi1"
+            android:layout_marginTop="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+            <!--中港14种重大疾病定义对比-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/laingdi1_420"
+                    android:id="@+id/imageView6"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:text="中港14种重大疾病定义对比"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--银联-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:tag="@string/laingdi2"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+            <!--分析结果-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/liangdi2_420"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="20sp"
+                    android:text="银联：不能刷卡够资本项目投资性寿险"
+                    />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <!--什么是强积金-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_gravity="center"
+            android:tag="0"
+            android:layout_marginTop="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

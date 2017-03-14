@@ -1,15 +1,21 @@
 package com.veyron.www.money.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.veyron.www.money.R;
+import com.veyron.www.money.activitys.NewsActivity;
 
 /**
  * Created by Veyron on 2017/3/13.
@@ -17,6 +23,7 @@ import android.widget.TextView;
  */
 
 public class MyFragment extends Fragment{
+    View view;
     /**
      * 标题
      */
@@ -69,11 +76,66 @@ public class MyFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //创建视图
-        textView = new TextView(mContext);
-        textView.setTextColor(Color.RED);
-        textView.setTextSize(25);
-        textView.setGravity(Gravity.CENTER);
-        return textView;
+        switch(getContent()){
+            case "1":
+                view = inflater.inflate(R.layout.layout_toutiao,null);
+                initClick(view);
+                break;
+            case "2":
+                view = inflater.inflate(R.layout.layout_baoxian,null);
+                initClick(view);
+                break;
+            case "3":
+                view = inflater.inflate(R.layout.layout_guoji,null);
+                initClick(view);
+                break;
+            case "4":
+                view = inflater.inflate(R.layout.layout_liangdi,null);
+                initClick(view);
+                break;
+            case "5":
+                view = inflater.inflate(R.layout.layout_shiyanshi,null);
+                initClick(view);
+                break;
+        }
+
+        return view;
+    }
+
+    private void initClick(View view) {
+        CardView c_view1 = (CardView) view.findViewById(R.id.card_view1);
+        CardView c_view2 = (CardView) view.findViewById(R.id.card_view2);
+        CardView c_view3 = (CardView) view.findViewById(R.id.card_view3);
+        c_view1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (! view.getTag().equals("0")){
+                    Intent intent = new Intent(getActivity(), NewsActivity.class);
+                    intent.putExtra("url",view.getTag().toString());
+                    startActivity(intent);
+                }
+            }
+        });
+        c_view2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (! view.getTag().equals("0")){
+                    Intent intent = new Intent(getActivity(), NewsActivity.class);
+                    intent.putExtra("url",view.getTag().toString());
+                    startActivity(intent);
+                }
+            }
+        });
+        c_view3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (! view.getTag().equals("0")){
+                    Intent intent = new Intent(getActivity(), NewsActivity.class);
+                    intent.putExtra("url",view.getTag().toString());
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     /**
@@ -84,6 +146,6 @@ public class MyFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         //设置内容
-        textView.setText(content);
+        //textView.setText(content);
     }
 }

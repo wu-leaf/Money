@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Money</string>
     <string name="skip">跳过(%1$ds)</string>
+    <string name="neidike"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=18&groupId=0&typeList=%5B%5D]]></string>
+    <string name="neidike11"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=19&groupId=0&typeList=%5B%5D]]></string>
+    <string name="icac"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=16&groupId=0&typeList=%5B%5D]]></string>
+    <string name="baoxian1"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=10&groupId=0&typeList=%5B%5D]]></string>
+    <string name="baoxian3"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=13&groupId=0&typeList=%5B%5D]]></string>
+    <string name="baoxian2"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=17&groupId=0&typeList=%5B%5D]]></string>
+    <string name="mei1"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=14&groupId=0&typeList=%5B%5D]]></string>
+    <string name="mei2"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=12&groupId=0&typeList=%5B%5D]]></string>
+    <string name="laingdi1"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=11&groupId=0&typeList=%5B%5D]]></string>
+    <string name="laingdi2"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=20&groupId=0&typeList=%5B%5D]]></string>
+    <string name="shiyanshi1"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=15&groupId=0&typeList=%5B%5D]]></string>
+    <string name="shiyanshi2"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=24&groupId=0&typeList=%5B%5D]]></string>
+    <string name="shiyanshi3"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=22&groupId=0&typeList=%5B%5D]]></string>
+
+
 </resources>

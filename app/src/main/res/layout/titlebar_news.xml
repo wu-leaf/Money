@@ -3,20 +3,23 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:id="@+id/titlebar"
-    android:background="#ffffff"
+    android:background="#FAFAFA"
     android:orientation="horizontal">
 
-    <Button
-        android:alpha="0"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="10.0" />
-    <TextView
-        android:id="@+id/tv_title"
+    <ImageView
+        android:paddingLeft="6dp"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/back_32"/>
+
+    <TextView
+        android:id="@+id/tb_title"
+        android:paddingLeft="20dp"
         android:layout_gravity="center_vertical"
-        android:text="news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新 闻"
         android:textSize="20sp" />
     <Button
         android:alpha="0"
@@ -24,16 +27,14 @@
         android:layout_height="wrap_content"
         android:layout_weight="9.0" />
     <ImageView
-        android:id="@+id/image"
+        android:layout_gravity="center_vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:background="#ffffff"
-        android:src="@drawable/add"
-        />
+        android:src="@drawable/share_32"/>
     <Button
-    android:alpha="0"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1.0" />
+        android:alpha="0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+
 </LinearLayout>

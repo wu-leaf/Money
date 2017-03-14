@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.veyron.www.money">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,8 +29,11 @@
             android:name=".activitys.DemanActivity2"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".activitys.AgentActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".activitys.AgentActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activitys.NewsActivity">
         </activity>
     </application>
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view1"
+            android:tag="@string/mei1"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+            <!--分析结果-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:src="@drawable/mei1_420"
+                    android:id="@+id/imageView7"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="24sp"
+                    android:text="美联储前主席和日本前财政聊了聊世界货币、美元和人民币的未来"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:layout_gravity="center"
+            android:tag="@string/mei2"
+            android:layout_marginTop="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/mei2_420"
+                    android:id="@+id/imageView5"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="23sp"
+                    android:text="如何评价美联储2016年12月15日宣布加息25个基点？会带来哪些影响？"
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:tag="0"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="2dp">
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
