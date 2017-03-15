@@ -91,8 +91,8 @@
                     android:layout_margin="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2016年法定结婚年龄"
-                    android:drawableLeft="@drawable/jiehui"
+                    android:text="保险小贴士"
+                    android:drawableLeft="@drawable/tips_100"
                     android:layout_weight="0.43"/>
                     <View
                         android:layout_width="match_parent"
@@ -100,13 +100,14 @@
                         android:background="#efefef"
                         android:layout_gravity="center_horizontal"
                         />
+
                     <TextView
                         android:layout_margin="20dp"
                         android:layout_width="229dp"
                         android:layout_height="wrap_content"
-                        android:text="公司注销了债务怎么办"
-                        android:drawableLeft="@drawable/zaiwu"
-                        />
+                        android:text="保险合同常见陷阱"
+                        android:drawableLeft="@drawable/trap_100"
+                        android:id="@+id/textView5"/>
                 </LinearLayout>
 
             </android.support.v7.widget.CardView>

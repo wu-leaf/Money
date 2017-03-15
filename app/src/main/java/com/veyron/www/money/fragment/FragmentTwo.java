@@ -2,15 +2,22 @@ package com.veyron.www.money.fragment;
 
 import android.graphics.Color;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.veyron.www.money.R;
 import com.veyron.www.money.adapters.MyViewPagerAdapter;
+import com.veyron.www.money.fragment.infragment.BaoXianFragment;
+import com.veyron.www.money.fragment.infragment.GuoJiFragment;
+import com.veyron.www.money.fragment.infragment.LiangDiFragment;
+import com.veyron.www.money.fragment.infragment.ShiYanShiFragment;
+import com.veyron.www.money.fragment.infragment.TouTiaoFragment;
 
 import java.util.ArrayList;
 
@@ -18,8 +25,9 @@ import java.util.ArrayList;
 public class FragmentTwo extends BaseFragment {
     ViewPager viewPager;
     TabLayout tabLayout;
-    ArrayList<MyFragment> fragments;
+    ArrayList<MyFragment>  fragments;
     MyViewPagerAdapter adapter;
+    ImageView mImageView;
 
     private static final String TAG = FragmentTwo.class.getSimpleName();//"CommonFrameFragment"
     private TextView textView;
@@ -32,8 +40,13 @@ public class FragmentTwo extends BaseFragment {
 
         viewPager = (ViewPager) contentView.findViewById(R.id.viewPager);
         tabLayout = (TabLayout) contentView.findViewById(R.id.tabLayout);
+        mImageView = (ImageView) contentView.findViewById(R.id.image);
+        mImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-
+            }
+        });
         return contentView;
     }
 
@@ -42,12 +55,11 @@ public class FragmentTwo extends BaseFragment {
         super.initData();
 //初始化数据
         fragments = new ArrayList<>();
-
-            fragments.add(new MyFragment("头条","头条内容"));
-            fragments.add(new MyFragment("保险101","保险内容"));
-            fragments.add(new MyFragment("国际","国际内容"));
-            fragments.add(new MyFragment("两地","两地内容"));
-            fragments.add(new MyFragment("实验室","实验室内容"));
+            fragments.add(new MyFragment("头条","1"));
+            fragments.add(new MyFragment("保险101","2"));
+            fragments.add(new MyFragment("国际","3"));
+            fragments.add(new MyFragment("两地","4"));
+            fragments.add(new MyFragment("实验室","5"));
         //设置ViewPager的适配器
 
         //adapter = new ViewPagerAdapter(getSupportFragmentManager(),fragments);
