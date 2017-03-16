@@ -54,12 +54,12 @@ public class FragmentOne extends BaseFragment {
 
     // 图片标题集合
     private final String[] imageDescriptions = {
-            "法律1",
-            "法律2",
-            "法律3",
-            "法律4",
-            "法律5",
-            "法律6"
+            "Sound",
+            "Simple",
+            "Smart",
+            "Sound",
+            "Simple",
+            "Smart"
     };
     private Handler handler = new Handler() {
         @Override

@@ -15,12 +15,14 @@ import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ImageView;
 
 import com.veyron.www.money.R;
 
 import dmax.dialog.SpotsDialog;
 
-public class NewsActivity extends AppCompatActivity {
+public class NewsActivity extends AppCompatActivity implements View.OnClickListener{
+    ImageView back_img;
     WebView mWebView;
     private String url;
     // 用于记录出错页面的url 方便重新加载
@@ -30,6 +32,8 @@ public class NewsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+        back_img = (ImageView)findViewById(R.id.back_img);
+        back_img.setOnClickListener(this);
         url = getIntent().getExtras().getString("url");
         mDialog = new SpotsDialog(this,"loading....");
         mDialog.show();
@@ -75,6 +79,12 @@ public class NewsActivity extends AppCompatActivity {
         mWebView.setWebViewClient(new MyWebViewClient());
         mWebView.loadUrl(url);
     }
+
+    @Override
+    public void onClick(View view) {
+        finish();
+    }
+
     class MyWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {

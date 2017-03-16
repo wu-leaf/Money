@@ -57,12 +57,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:src="@drawable/neidi_420"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="29sp"
                 android:text="香港内地客户保费增倍"
-                />
+                android:id="@+id/textView6"/>
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
