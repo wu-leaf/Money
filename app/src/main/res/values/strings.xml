@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Money</string>
+    <string name="app_name">慧宝</string>
     <string name="skip">跳过(%1$ds)</string>
     <string name="neidike"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=18&groupId=0&typeList=%5B%5D]]></string>
     <string name="neidike11"><![CDATA[http://m.tj12611148.icoc.me/nd.jsp?mid=304&id=19&groupId=0&typeList=%5B%5D]]></string>

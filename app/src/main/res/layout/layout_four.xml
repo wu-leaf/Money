@@ -46,6 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:textColor="#000000"
             android:drawableTop="@drawable/lipei"
             android:text=" 理 赔"
             android:layout_centerVertical="true"
@@ -67,6 +68,7 @@
             android:textSize="30sp"
             android:drawableTop="@drawable/kefu"
             android:text=" 客 服"
+            android:textColor="#000000"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:id="@+id/textView3"/>
@@ -85,14 +87,18 @@
                     android:layout_gravity="center_vertical"
                     android:layout_height="wrap_content"
                     android:src="@drawable/save"/>
+
                 <TextView
                     android:layout_marginLeft="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
+                    android:textColor="#000000"
                     android:layout_gravity="center_vertical"
-                    android:text="收藏">
+                    android:text="收藏"
+                    android:id="@+id/textView7">
                 </TextView>
+
                 <Button
                     android:alpha="0"
                     android:layout_width="0dp"
@@ -101,6 +107,7 @@
                 <ImageView
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
+                    android:visibility="invisible"
                     android:layout_height="wrap_content"
                     android:src="@drawable/enter"/>
                 <Button
@@ -131,6 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
+                    android:textColor="#000000"
                     android:layout_marginLeft="5dp"
                     android:layout_gravity="center_vertical"
                     android:text="推广"></TextView>
@@ -145,6 +153,7 @@
                 <ImageView
                     android:layout_gravity="center_vertical"
                     android:layout_width="wrap_content"
+                    android:visibility="invisible"
                     android:layout_height="wrap_content"
                     android:src="@drawable/enter"/>
                 <Button
